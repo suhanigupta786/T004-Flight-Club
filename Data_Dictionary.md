@@ -13,8 +13,6 @@
 
 ## 📌 1. Overview
 
-This document describes the main columns and engineered features used in the **Flight Delay Prediction & Rescheduling** project.
-
 The project uses 2013 US flight records to predict whether a flight will arrive more than 15 minutes late. The model is intended to make predictions using information available **before departure**.
 
 > **Core rule:** A column used to calculate the target must not also be supplied as a model input.
