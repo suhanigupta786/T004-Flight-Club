@@ -1,0 +1,53 @@
+{
+    "model_name": "FlightDelayMLP",
+    "numerical_features": [
+        "distance",
+        "dep_time_sin",
+        "dep_time_cos",
+        "weekday_sin",
+        "weekday_cos",
+        "month_sin",
+        "month_cos",
+        "arr_time_sin",
+        "arr_time_cos",
+        "origin_delay_rate_prev7d",
+        "origin_flights_prev7d",
+        "carrier_delay_rate_prev7d",
+        "carrier_flights_prev7d",
+        "dest_delay_rate_prev7d",
+        "dest_flights_prev7d",
+        "route_delay_rate_prev7d",
+        "route_flights_prev7d"
+    ],
+    "categorical_features": [
+        "carrier",
+        "origin",
+        "dest",
+        "route"
+    ],
+    "category_sizes": {
+        "carrier": 17,
+        "origin": 4,
+        "dest": 103,
+        "route": 219
+    },
+    "embedding_dimensions": {
+        "carrier": 9,
+        "origin": 2,
+        "dest": 50,
+        "route": 50
+    },
+    "numerical_input_dim": 17,
+    "hidden_dimensions": [
+        128,
+        64,
+        32
+    ],
+    "dropout_rates": [
+        0.3,
+        0.2
+    ],
+    "output_dimension": 1,
+    "output_type": "raw_logit",
+    "total_trainable_parameters": 43142
+}
